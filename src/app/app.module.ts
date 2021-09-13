@@ -1,25 +1,24 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BaseComponent } from './base/base.component';
+import { ProductListModule } from '@bit/surendher.login.product-list';
 import { ChildComponent } from './child/child.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TestBaseRoutingModule } from './test-base/test-base-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BaseComponent,
-    ChildComponent
+    ChildComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule
+    ProductListModule  
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

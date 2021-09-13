@@ -1,15 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SampleModule } from './sample/sample.module';
+import { ChildComponent } from './child/child.component';
 
 const routes: Routes = [
   {
-    path: '', redirectTo: '/sample', pathMatch: 'full'
+    path:'', redirectTo:'/login', pathMatch: 'full'
   },
   {
-    path: 'sample', loadChildren: () => import('./sample/sample.module').then(m => m.SampleModule)
+    path: 'login', component: ChildComponent
+  },
+  {
+    path: 'testbase', loadChildren: () => import('./test-base/test-base.module').then(m => m.TestBaseModule)
   }
 ];
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
