@@ -24,6 +24,9 @@
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
   },
+  "peerDependencies": {
+    "@angular/core": "~12.2.6"
+  },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.2.6",
     "@angular/cli": "~12.2.6",
