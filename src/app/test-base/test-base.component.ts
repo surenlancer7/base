@@ -13,7 +13,7 @@ export class TestBaseComponent implements OnInit {
   }
 
   login(): void {
-    console.log("lobin base v2");
+    console.log("lobin base v3");
   }
 
 }
