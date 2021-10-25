@@ -1,5 +1,5 @@
 {
-  "name": "component-one",
+  "name": "surendher-component-one",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~12.2.6",
     "@angular/common": "~12.2.6",

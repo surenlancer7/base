@@ -18,4 +18,7 @@ export class ChildComponent implements OnInit {
     
   }
 
+  baseMethod(): void {
+    console.log("baseMethod v1");
+  }
 }

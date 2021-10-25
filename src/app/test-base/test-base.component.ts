@@ -11,5 +11,9 @@ export class TestBaseComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  login(): void {
+    console.log("lobin base v1");
+  }
 
 }
